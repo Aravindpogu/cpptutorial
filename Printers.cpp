@@ -19,7 +19,7 @@ private:
 
 
 Printer::Printer(string name){
-//	name = name;
+	m_name = name;
 }
 
 Printer::Printer(){
@@ -74,6 +74,7 @@ int main()
 		cout<< "error : port " << n << " is already in use on " << name << endl; 
 	}
       }
+	break;
       case 'd':
       {
         int n;
@@ -88,6 +89,7 @@ int main()
 		cout<< "error : port " << n << " is not connected " << endl; 
 	}
       }
+	break;
       case 'p':
       {
         int n;
@@ -102,6 +104,7 @@ int main()
 		cout<< "error : port " << n << " is not connected " << endl; 
 	}
       }
+	break;
     }
   }
   while (command != 'x');
