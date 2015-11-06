@@ -185,10 +185,10 @@ int main()
     
     // Replace with initialization list (pick random locations for the bees)
     // e.g. vector<Bee> bees { {5, 8}, {9, 1} ... };
-    vector<Bee> bees;
-    for (int i = 0; i < NBEES; i++) {
-        bees.push_back(Bee(FSIZE/2, FSIZE/2));
-    }
+    vector<Bee> bees = { {3,4}, {5,2}, {9,1}, {8,7}, {2,6}, {1,7}, {3,5}, {4,1}, {5,7}, {4,9} };
+    //for (int i = 0; i < NBEES; i++) {
+    //    bees.push_back(Bee(FSIZE/2, FSIZE/2));
+    //}
     
     while (true)
     {
